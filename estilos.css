@@ -1,0 +1,200 @@
+/* Remove margens e espaços padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Configura o corpo inteiro da página */
+body {
+    font-family: Arial, sans-serif;
+    background: #eef4f8;
+    color: #172033;
+}
+
+
+/* ============================= */
+/* CABEÇALHO */
+/* ============================= */
+
+/* Estilo da área superior da página */
+.cabecalho {
+    background: #102a43;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+
+/* Tamanho do título principal */
+.cabecalho h1 {
+    font-size: 36px;
+}
+
+
+/* Espaçamento do texto abaixo do título */
+.cabecalho p {
+    margin: 8px;
+}
+
+
+/* Espaçamento do menu */
+nav {
+    margin-top: 20px;
+}
+
+
+/* Estilo dos links do menu */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+
+/* ============================= */
+/* INTRODUÇÃO */
+/* ============================= */
+
+/* Centraliza a introdução */
+.introducao {
+    text-align: center;
+    padding: 35px 20px 20px;
+}
+
+
+/* Tamanho do título da introdução */
+.introducao h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+
+/* ============================= */
+/* CARTÃO */
+/* ============================= */
+
+/* Área que posiciona o cartão no centro */
+.cartao-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+/* Define o tamanho do cartão */
+.cartao {
+    width: 320px;
+    height: 420px;
+    position: relative;
+}
+
+
+/* Estilo da frente e do verso */
+.cartao-frente,
+.cartao-verso {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Configura a imagem do cartão */
+.cartao-frente img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+
+
+/* Estilo das etiquetas */
+.etiqueta,
+.resultado {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* Cor da etiqueta "Curiosidade" */
+.etiqueta {
+    background: #d9ecff;
+}
+
+
+/* Cor da etiqueta "Verdade" */
+.resultado {
+    background: #d9f7df;
+}
+
+
+/* Tamanho dos títulos do cartão */
+.cartao h3 {
+    font-size: 24px;
+    margin: 12px 0;
+}
+
+
+/* Espaçamento dos textos do cartão */
+.cartao p {
+    line-height: 1.5;
+}
+
+
+/* Esconde o verso inicialmente */
+.cartao-verso {
+    display: none;
+}
+
+
+/* Quando o mouse passa sobre o cartão,
+   a frente desaparece */
+.cartao:hover .cartao-frente {
+    display: none;
+}
+
+
+/* Quando o mouse passa sobre o cartão,
+   o verso aparece */
+.cartao:hover .cartao-verso {
+    display: block;
+}
+
+
+/* ============================= */
+/* AVISO */
+/* ============================= */
+
+/* Caixa de aviso abaixo do cartão */
+.aviso {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 25px;
+    text-align: center;
+    background: white;
+    border-radius: 15px;
+}
+
+
+/* ============================= */
+/* RODAPÉ */
+/* ============================= */
+
+/* Estilo da parte inferior da página */
+footer {
+    margin-top: 40px;
+    padding: 25px;
+    text-align: center;
+    background: #102a43;
+    color: white;
+}
